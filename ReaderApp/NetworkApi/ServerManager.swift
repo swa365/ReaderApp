@@ -8,7 +8,7 @@ struct ServerManager {
 
     static func newsApiServer(_handler: @escaping (NewsResponse?, String?) -> Void) {
 
-        let urlString = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=098b1d64a17d476e8f21d15f986afa5e"
+        let urlString = APIConstants.apiKey
 
         guard let url = URL(string: urlString) else {
             _handler(nil, "Invalid URL")

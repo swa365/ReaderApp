@@ -27,7 +27,7 @@ class NetworkMonitor {
             } else {
                 self.connectionType = nil
             }
-            print("Network status: \(self.isConnected ? "Connected" : "Disconnected")")
+           // print("Network status: \(self.isConnected ? "Connected" : "Disconnected")")
         }
 
         monitor.start(queue: queue)
